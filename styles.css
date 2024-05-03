@@ -109,3 +109,13 @@ select {
 .img-navigraph {
     width: 110px;
 }
+
+.ac-img {
+    background-color: #59595a;
+    width: 70px;
+    height: 38px;
+    background-size: cover;
+    background-position: center;
+    vertical-align: middle;
+    display: inline-block;
+}

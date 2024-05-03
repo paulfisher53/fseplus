@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+body {
+    font-family: "Open Sans", sans-serif !important;
+}
+
+.header h1 {
+    background: url("https://images.squarespace-cdn.com/content/v1/5f3c9c4e26da2e54db831466/1598182758236-AOE2XWRIMV3IEXK43CI6/Cover_Logo.png?format=2500w")
+        no-repeat !important;
+    background-size: 200px !important;
+}
+
+.content a {
+    color: rgb(43, 136, 242) !important;
+    font-weight: bold !important;
+}
+
+caption {
+    padding-left: 10px !important;
+}
+
+input,
+select {
+    border-radius: 4px !important;
+    padding: 2px !important;
+    border-color: #333 !important;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 14px !important;
+    vertical-align: middle;
+}
+
+.main-menu a {
+    color: #000 !important;
+}
+
+.content a.link,
+.content button,
+.content .button,
+.content .btn,
+.content input[type="button"] {
+    box-sizing: border-box;
+    font-size: 14px !important;
+    font-weight: normal !important;
+    background-color: rgb(63, 81, 181) !important;
+    padding: 2px 5px !important;
+    border-radius: 4px !important;
+    color: #fff !important;
+    border: none !important;
+    border-bottom: 2px solid #333 !important;
+    margin: 2px !important;
+    vertical-align: middle !important;
+    text-shadow: none !important;
+    background-image: none !important;
+    height: 26px !important;
+    line-height: 20px !important;
+}
+
+.content a.link:hover,
+.content button:hover,
+.content .btn:hover,
+.content .button:hover,
+.content input[type="button"]:hover {
+    background-color: rgb(96, 112, 205) !important;
+    text-decoration: none !important;
+}
+
+.assigmentTable tr {
+    height: 40px;
+}
+.aircraftTable tr {
+    height: 40px;
+}
+.dataTable tr {
+    height: 40px;
+}
+
+.dataTable td {
+    vertical-align: middle !important;
+}
+
+.dataTable tr td:first-child {
+    padding-left: 5px !important;
+}
+
+.dataTable tr th:first-child {
+    padding-left: 5px !important;
+}
+
+.dataTable th {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+.infoBlock,
+.footer {
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.img-navigraph,
+.content .btn-simbrief {
+    width: auto;
+    background-color: #3f444d;
+    padding: 5px;
+    border-radius: 4px;
+    color: #fff !important;
+}

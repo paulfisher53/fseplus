@@ -15,6 +15,11 @@ body {
     font-weight: bold !important;
 }
 
+.content a:visited {
+    color: rgb(162, 82, 193) !important;
+    font-weight: bold !important;
+}
+
 caption {
     padding-left: 10px !important;
 }
@@ -64,6 +69,11 @@ select {
     text-decoration: none !important;
 }
 
+.content a.link:visited,
+.content .btn:visited {
+    color: #fff !important;
+}
+
 .assigmentTable tr {
     height: 40px;
 }
@@ -100,10 +110,14 @@ select {
 .img-navigraph,
 .content .btn-simbrief {
     width: auto;
-    background-color: #3f444d;
+    background-color: #3f444d !important;
     padding: 5px;
     border-radius: 4px;
     color: #fff !important;
+}
+
+.content .btn-simbrief:hover {
+    background-color: #2e3137 !important;
 }
 
 .img-navigraph {

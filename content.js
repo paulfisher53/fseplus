@@ -977,6 +977,7 @@ function getAssignmentText(row, index) {
     btn.target = "_blank";
     btn.innerHTML =
       "<img src='https://dispatch.simbrief.com/img/logo-papers.749a29af39b0.png' width='15px' /> SimBrief Dispatch";
+    btn.classList.add("btn");
     btn.classList.add("btn-simbrief");
     actions.appendChild(btn);
   } else if (

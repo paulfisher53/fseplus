@@ -523,19 +523,19 @@ function getAssignmentText(row, index) {
         img.parentNode.appendChild(iframe);
         img.remove();
       }
-      var aircraft = document.querySelectorAll(".aircraftTable tbody tr");
-      aircraft.forEach(function (ac) {
-        var actext = ac.childNodes[3].innerText;
-        ac.childNodes[3].innerHTML =
-          "<div class='ac-img' " +
-          (aircraftImages[actext]
-            ? "style='background-image:url(\"" +
-              aircraftImages[actext] +
-              "\");'"
-            : "") +
-          "></div> " +
-          actext;
-      });
+    });
+    var aircraft = document.querySelectorAll(".aircraftTable tbody tr");
+    aircraft.forEach(function (ac) {
+      var actext = ac.childNodes[3].innerText;
+      ac.childNodes[3].innerHTML =
+        "<a href='" +
+        aircraftImages[actext] +
+        "' target='_blank'><div class='ac-img' " +
+        (aircraftImages[actext]
+          ? "style='background-image:url(\"" + aircraftImages[actext] + "\");'"
+          : "") +
+        "></div></a>&nbsp;&nbsp;" +
+        actext;
     });
   } else if (page.indexOf("myflight.jsp") === 0) {
     var actions = document.querySelector(".assignments-actions");
@@ -979,27 +979,6 @@ function getAssignmentText(row, index) {
       "<img src='https://dispatch.simbrief.com/img/logo-papers.749a29af39b0.png' width='15px' /> SimBrief Dispatch";
     btn.classList.add("btn-simbrief");
     actions.appendChild(btn);
-  } else if (page.indexOf("aircraftforsale.jsp") === 0) {
-    var btns = document.querySelectorAll("button");
-    btns.forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        setTimeout(function () {
-          var aircraft = document.querySelectorAll(".aircraftTable tbody tr");
-          aircraft.forEach(function (ac) {
-            var actext = ac.childNodes[3].innerText;
-            ac.childNodes[3].innerHTML =
-              "<div class='ac-img' " +
-              (aircraftImages[actext]
-                ? "style='background-image:url(\"" +
-                  aircraftImages[actext] +
-                  "\");'"
-                : "") +
-              "></div> " +
-              actext;
-          });
-        }, 3000);
-      });
-    });
   } else if (
     page.indexOf("new") === 0 &&
     path.indexOf("dispatch.simbrief.com") !== -1
